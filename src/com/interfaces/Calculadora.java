@@ -5,12 +5,16 @@
  */
 package com.interfaces;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author andre
  */
 public class Calculadora extends javax.swing.JFrame {
-
+    double valor1=0,valor2=0, resultado=0;
+    int operacao=0;
+    
     /**
      * Creates new form Calculadora
      */
@@ -63,33 +67,73 @@ public class Calculadora extends javax.swing.JFrame {
         c_btn.setBackground(new java.awt.Color(106, 52, 52));
         c_btn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         c_btn.setText("C");
+        c_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                c_btnActionPerformed(evt);
+            }
+        });
 
         v_btn.setBackground(new java.awt.Color(106, 52, 52));
         v_btn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         v_btn.setText("<");
+        v_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                v_btnActionPerformed(evt);
+            }
+        });
 
         div_btn.setBackground(new java.awt.Color(126, 134, 145));
         div_btn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         div_btn.setText("/");
+        div_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                div_btnActionPerformed(evt);
+            }
+        });
 
         mult_btn.setBackground(new java.awt.Color(126, 134, 145));
         mult_btn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         mult_btn.setText("X");
+        mult_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mult_btnActionPerformed(evt);
+            }
+        });
 
         menos_btn.setBackground(new java.awt.Color(126, 134, 145));
         menos_btn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         menos_btn.setText("-");
+        menos_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menos_btnActionPerformed(evt);
+            }
+        });
 
         mais_btn.setBackground(new java.awt.Color(126, 134, 145));
         mais_btn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         mais_btn.setText("+");
+        mais_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mais_btnActionPerformed(evt);
+            }
+        });
 
         igual_btn.setBackground(java.awt.SystemColor.activeCaption);
         igual_btn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         igual_btn.setText("=");
+        igual_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                igual_btnActionPerformed(evt);
+            }
+        });
 
         ponto_btn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ponto_btn.setText(".");
+        ponto_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ponto_btnActionPerformed(evt);
+            }
+        });
 
         zero_btn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         zero_btn.setText("0");
@@ -174,6 +218,11 @@ public class Calculadora extends javax.swing.JFrame {
         ce_btn.setBackground(new java.awt.Color(106, 52, 52));
         ce_btn.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         ce_btn.setText("CE");
+        ce_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ce_btnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -345,6 +394,86 @@ public class Calculadora extends javax.swing.JFrame {
         // TODO add your handling code here:
         visor.setText(visor.getText()+9);
     }//GEN-LAST:event_nove_btnActionPerformed
+
+    private void c_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_btnActionPerformed
+        // TODO add your handling code here:
+        visor.setText("");
+        valor1=0;
+        valor2=0;
+        resultado=0;
+    }//GEN-LAST:event_c_btnActionPerformed
+
+    private void ce_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ce_btnActionPerformed
+        // TODO add your handling code here:
+        visor.setText("");
+    }//GEN-LAST:event_ce_btnActionPerformed
+
+    private void v_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v_btnActionPerformed
+        // TODO add your handling code here:
+        String s = visor.getText();
+        if (s.length() > 0) {
+            s = s.substring (0, s.length() - 1);
+        }
+        visor.setText(s);
+    }//GEN-LAST:event_v_btnActionPerformed
+
+    private void igual_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_igual_btnActionPerformed
+        // TODO add your handling code here:
+        valor2 = Integer.parseInt(visor.getText());
+        
+        switch(operacao){
+            case 0:
+                resultado = valor1 + valor2;
+            break;
+            case 1:
+                resultado = valor1 - valor2;            
+            break;
+            case 2:
+                resultado = valor1 * valor2;            
+            break;
+            case 3:
+                resultado = valor1 / valor2;            
+            break;
+            default:
+                JOptionPane.showMessageDialog(null, "Operação invalida!!!");
+            break;
+        }
+        
+        visor.setText(String.valueOf(resultado));
+    }//GEN-LAST:event_igual_btnActionPerformed
+
+    private void mais_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mais_btnActionPerformed
+        // TODO add your handling code here:
+        valor1 = Double.parseDouble(visor.getText());
+        operacao = 0;
+        visor.setText("");
+    }//GEN-LAST:event_mais_btnActionPerformed
+
+    private void menos_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menos_btnActionPerformed
+        // TODO add your handling code here:
+        valor1 = Double.parseDouble(visor.getText());
+        operacao = 1;
+        visor.setText("");
+    }//GEN-LAST:event_menos_btnActionPerformed
+
+    private void mult_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mult_btnActionPerformed
+        // TODO add your handling code here:
+        valor1 = Double.parseDouble(visor.getText());
+        operacao = 2;
+        visor.setText("");
+    }//GEN-LAST:event_mult_btnActionPerformed
+
+    private void div_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_div_btnActionPerformed
+        // TODO add your handling code here:
+        valor1 = Double.parseDouble(visor.getText());
+        operacao = 3;
+        visor.setText("");
+    }//GEN-LAST:event_div_btnActionPerformed
+
+    private void ponto_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ponto_btnActionPerformed
+        // TODO add your handling code here:
+        visor.setText(visor.getText()+".");
+    }//GEN-LAST:event_ponto_btnActionPerformed
 
     /**
      * @param args the command line arguments
