@@ -5,7 +5,10 @@
  */
 package com.interfaces;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
+import java.net.URL;
 import javax.swing.JOptionPane;
 
 /**
@@ -22,6 +25,10 @@ public class Calculadora extends javax.swing.JFrame {
     public Calculadora() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
+        URL url = this.getClass().getClassLoader().getResource("com/imagens/Calculator_30001.png"); 
+        Image iconeTitulo = Toolkit.getDefaultToolkit().getImage(url);  
+        this.setIconImage(iconeTitulo);
     }
 
     /**
@@ -294,7 +301,7 @@ public class Calculadora extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(visor, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+                .addComponent(visor, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(c_btn)
@@ -332,7 +339,7 @@ public class Calculadora extends javax.swing.JFrame {
                     .addComponent(igual_btn)
                     .addComponent(ponto_btn)
                     .addComponent(zero_btn))
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {c_btn, ce_btn, cinco_btn, div_btn, dois_btn, mais_btn, menos_btn, mult_btn, nove_btn, oito_btn, ponto_btn, quatro_btn, seis_btn, sete_btn, tres_btn, um_btn, v_btn, zero_btn});
@@ -342,16 +349,16 @@ public class Calculadora extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(11, 11, 11)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(6, 6, 6))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(11, 11, 11)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6))
         );
 
         pack();
