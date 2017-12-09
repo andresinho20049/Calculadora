@@ -59,58 +59,58 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jTextField1" max="32767" attributes="0"/>
+                      <Component id="visor" max="32767" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jButton11" linkSize="4" min="-2" max="-2" attributes="0"/>
+                          <Component id="zero_btn" linkSize="4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="jButton10" linkSize="4" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="ponto_btn" linkSize="4" min="-2" pref="41" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jButton8" min="-2" pref="96" max="-2" attributes="0"/>
+                          <Component id="igual_btn" min="-2" pref="96" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jButton14" linkSize="4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sete_btn" linkSize="4" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton15" linkSize="4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="oito_btn" linkSize="4" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jButton12" linkSize="4" min="-2" max="-2" attributes="0"/>
+                                      <Component id="um_btn" linkSize="4" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton19" linkSize="4" min="-2" max="-2" attributes="0"/>
+                                      <Component id="dois_btn" linkSize="4" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jButton13" linkSize="4" min="-2" max="-2" attributes="0"/>
+                                      <Component id="quatro_btn" linkSize="4" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton18" linkSize="4" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cinco_btn" linkSize="4" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jButton1" linkSize="4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="c_btn" linkSize="4" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton2" linkSize="4" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="ce_btn" linkSize="4" min="-2" pref="45" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jButton20" linkSize="4" min="-2" pref="45" max="-2" attributes="0"/>
-                                      <Component id="jButton17" linkSize="4" min="-2" pref="45" max="-2" attributes="0"/>
-                                      <Component id="jButton16" linkSize="4" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="tres_btn" linkSize="4" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="seis_btn" linkSize="4" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="nove_btn" linkSize="4" min="-2" pref="45" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jButton6" linkSize="4" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="jButton5" linkSize="4" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="jButton7" linkSize="4" pref="0" max="32767" attributes="0"/>
+                                      <Component id="menos_btn" linkSize="4" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="mult_btn" linkSize="4" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="mais_btn" linkSize="4" pref="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jButton3" linkSize="4" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="v_btn" linkSize="4" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton4" linkSize="4" max="32767" attributes="0"/>
+                                  <Component id="div_btn" linkSize="4" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -123,52 +123,52 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTextField1" pref="43" max="32767" attributes="0"/>
+                  <Component id="visor" pref="43" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButton1" linkSize="5" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton2" linkSize="5" min="-2" pref="31" max="-2" attributes="0"/>
-                      <Component id="jButton4" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton3" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="c_btn" linkSize="5" min="-2" max="-2" attributes="0"/>
+                      <Component id="ce_btn" linkSize="5" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="div_btn" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="v_btn" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jButton16" linkSize="5" min="-2" max="-2" attributes="0"/>
+                          <Component id="nove_btn" linkSize="5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jButton17" linkSize="5" min="-2" max="-2" attributes="0"/>
+                          <Component id="seis_btn" linkSize="5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jButton20" linkSize="5" min="-2" max="-2" attributes="0"/>
+                          <Component id="tres_btn" linkSize="5" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jButton14" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton15" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sete_btn" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="oito_btn" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jButton13" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton18" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="quatro_btn" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cinco_btn" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jButton12" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton19" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="um_btn" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dois_btn" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jButton5" linkSize="5" min="-2" max="-2" attributes="0"/>
+                          <Component id="mult_btn" linkSize="5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jButton6" linkSize="5" min="-2" max="-2" attributes="0"/>
+                          <Component id="menos_btn" linkSize="5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jButton7" linkSize="5" min="-2" max="-2" attributes="0"/>
+                          <Component id="mais_btn" linkSize="5" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton10" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton11" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="igual_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ponto_btn" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="zero_btn" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -176,7 +176,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="jTextField1">
+        <Component class="javax.swing.JTextField" name="visor">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="24" style="1"/>
@@ -188,7 +188,7 @@
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="c_btn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="34" green="34" red="6a" type="rgb"/>
@@ -199,7 +199,7 @@
             <Property name="text" type="java.lang.String" value="C"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton3">
+        <Component class="javax.swing.JButton" name="v_btn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="34" green="34" red="6a" type="rgb"/>
@@ -210,7 +210,7 @@
             <Property name="text" type="java.lang.String" value="&lt;"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton4">
+        <Component class="javax.swing.JButton" name="div_btn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="91" green="86" red="7e" type="rgb"/>
@@ -221,7 +221,7 @@
             <Property name="text" type="java.lang.String" value="/"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton5">
+        <Component class="javax.swing.JButton" name="mult_btn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="91" green="86" red="7e" type="rgb"/>
@@ -232,7 +232,7 @@
             <Property name="text" type="java.lang.String" value="X"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton6">
+        <Component class="javax.swing.JButton" name="menos_btn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="91" green="86" red="7e" type="rgb"/>
@@ -243,7 +243,7 @@
             <Property name="text" type="java.lang.String" value="-"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton7">
+        <Component class="javax.swing.JButton" name="mais_btn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="91" green="86" red="7e" type="rgb"/>
@@ -254,7 +254,7 @@
             <Property name="text" type="java.lang.String" value="+"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton8">
+        <Component class="javax.swing.JButton" name="igual_btn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d1" green="b4" id="Legenda Ativa" palette="2" red="99" type="palette"/>
@@ -265,7 +265,7 @@
             <Property name="text" type="java.lang.String" value="="/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton10">
+        <Component class="javax.swing.JButton" name="ponto_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -273,87 +273,117 @@
             <Property name="text" type="java.lang.String" value="."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton11">
+        <Component class="javax.swing.JButton" name="zero_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="zero_btnActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton12">
+        <Component class="javax.swing.JButton" name="um_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="1"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="um_btnActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton13">
+        <Component class="javax.swing.JButton" name="quatro_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="4"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="quatro_btnActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton14">
+        <Component class="javax.swing.JButton" name="sete_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="7"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sete_btnActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton15">
+        <Component class="javax.swing.JButton" name="oito_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="8"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="oito_btnActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton16">
+        <Component class="javax.swing.JButton" name="nove_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="9"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nove_btnActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton17">
+        <Component class="javax.swing.JButton" name="seis_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="6"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="seis_btnActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton18">
+        <Component class="javax.swing.JButton" name="cinco_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="5"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cinco_btnActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton19">
+        <Component class="javax.swing.JButton" name="dois_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="2"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dois_btnActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton20">
+        <Component class="javax.swing.JButton" name="tres_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="3"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tres_btnActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="ce_btn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="34" green="34" red="6a" type="rgb"/>
