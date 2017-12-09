@@ -5,6 +5,7 @@
  */
 package com.interfaces;
 
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 
 /**
@@ -63,6 +64,17 @@ public class Calculadora extends javax.swing.JFrame {
         visor.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         visor.setBorder(null);
         visor.setOpaque(false);
+        visor.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                visorKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                visorKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                visorKeyTyped(evt);
+            }
+        });
 
         c_btn.setBackground(new java.awt.Color(106, 52, 52));
         c_btn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -348,51 +360,71 @@ public class Calculadora extends javax.swing.JFrame {
     private void zero_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zero_btnActionPerformed
         // TODO add your handling code here:
         visor.setText(visor.getText()+0);
+        
+        visor.requestFocus();
     }//GEN-LAST:event_zero_btnActionPerformed
 
     private void um_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_um_btnActionPerformed
         // TODO add your handling code here:
         visor.setText(visor.getText()+1);
+        
+        visor.requestFocus();
     }//GEN-LAST:event_um_btnActionPerformed
 
     private void dois_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dois_btnActionPerformed
         // TODO add your handling code here:
         visor.setText(visor.getText()+2);
+        
+        visor.requestFocus();
     }//GEN-LAST:event_dois_btnActionPerformed
 
     private void tres_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tres_btnActionPerformed
         // TODO add your handling code here:
         visor.setText(visor.getText()+3);
+        
+        visor.requestFocus();
     }//GEN-LAST:event_tres_btnActionPerformed
 
     private void quatro_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quatro_btnActionPerformed
         // TODO add your handling code here:
         visor.setText(visor.getText()+4);
+        
+        visor.requestFocus();
     }//GEN-LAST:event_quatro_btnActionPerformed
 
     private void cinco_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cinco_btnActionPerformed
         // TODO add your handling code here:
         visor.setText(visor.getText()+5);
+        
+        visor.requestFocus();
     }//GEN-LAST:event_cinco_btnActionPerformed
 
     private void seis_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seis_btnActionPerformed
         // TODO add your handling code here:
         visor.setText(visor.getText()+6);
+        
+        visor.requestFocus();
     }//GEN-LAST:event_seis_btnActionPerformed
 
     private void sete_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sete_btnActionPerformed
         // TODO add your handling code here:
         visor.setText(visor.getText()+7);
+        
+        visor.requestFocus();
     }//GEN-LAST:event_sete_btnActionPerformed
 
     private void oito_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oito_btnActionPerformed
         // TODO add your handling code here:
         visor.setText(visor.getText()+8);
+        
+        visor.requestFocus();
     }//GEN-LAST:event_oito_btnActionPerformed
 
     private void nove_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nove_btnActionPerformed
         // TODO add your handling code here:
         visor.setText(visor.getText()+9);
+        
+        visor.requestFocus();
     }//GEN-LAST:event_nove_btnActionPerformed
 
     private void c_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_btnActionPerformed
@@ -401,11 +433,15 @@ public class Calculadora extends javax.swing.JFrame {
         valor1=0;
         valor2=0;
         resultado=0;
+        
+        visor.requestFocus();
     }//GEN-LAST:event_c_btnActionPerformed
 
     private void ce_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ce_btnActionPerformed
         // TODO add your handling code here:
         visor.setText("");
+        
+        visor.requestFocus();
     }//GEN-LAST:event_ce_btnActionPerformed
 
     private void v_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v_btnActionPerformed
@@ -415,11 +451,16 @@ public class Calculadora extends javax.swing.JFrame {
             s = s.substring (0, s.length() - 1);
         }
         visor.setText(s);
+        
+        visor.requestFocus();
     }//GEN-LAST:event_v_btnActionPerformed
 
     private void igual_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_igual_btnActionPerformed
         // TODO add your handling code here:
-        valor2 = Integer.parseInt(visor.getText());
+        if (valor1 == 0){
+            visor.setText(visor.getText());
+        }else{
+        valor2 = Double.parseDouble(visor.getText());
         
         switch(operacao){
             case 0:
@@ -439,41 +480,105 @@ public class Calculadora extends javax.swing.JFrame {
             break;
         }
         
+        valor1 = resultado;
         visor.setText(String.valueOf(resultado));
+        }
+        
+        visor.requestFocus();
     }//GEN-LAST:event_igual_btnActionPerformed
 
     private void mais_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mais_btnActionPerformed
         // TODO add your handling code here:
+        if(visor.getText().isEmpty() || visor.getText()=="0"){
+            JOptionPane.showMessageDialog(null, "Digite um valor!");
+        }else{
         valor1 = Double.parseDouble(visor.getText());
         operacao = 0;
         visor.setText("");
+        }
+        
+        visor.requestFocus();
     }//GEN-LAST:event_mais_btnActionPerformed
 
     private void menos_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menos_btnActionPerformed
         // TODO add your handling code here:
+        if(visor.getText().isEmpty() || visor.getText()=="0"){
+            JOptionPane.showMessageDialog(null, "Digite um valor!");
+        }else{
         valor1 = Double.parseDouble(visor.getText());
         operacao = 1;
-        visor.setText("");
+        visor.setText("");}
+        
+        visor.requestFocus();
     }//GEN-LAST:event_menos_btnActionPerformed
 
     private void mult_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mult_btnActionPerformed
         // TODO add your handling code here:
+        if(visor.getText().isEmpty() || visor.getText()=="0"){
+            JOptionPane.showMessageDialog(null, "Digite um valor!");
+        }else{
         valor1 = Double.parseDouble(visor.getText());
         operacao = 2;
-        visor.setText("");
+        visor.setText("");}
+        
+        visor.requestFocus();
     }//GEN-LAST:event_mult_btnActionPerformed
 
     private void div_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_div_btnActionPerformed
         // TODO add your handling code here:
+        if(visor.getText().isEmpty() || visor.getText()=="0"){
+            JOptionPane.showMessageDialog(null, "Digite um valor!");
+        }else{
         valor1 = Double.parseDouble(visor.getText());
         operacao = 3;
-        visor.setText("");
+        visor.setText("");}
+        
+        visor.requestFocus();
     }//GEN-LAST:event_div_btnActionPerformed
 
     private void ponto_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ponto_btnActionPerformed
         // TODO add your handling code here:
         visor.setText(visor.getText()+".");
+        
+        visor.requestFocus();
     }//GEN-LAST:event_ponto_btnActionPerformed
+
+    private void visorKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_visorKeyReleased
+        
+    }//GEN-LAST:event_visorKeyReleased
+
+    private void visorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_visorKeyTyped
+        // TODO add your handling code here:
+        String caracteres="0987654321.";
+        if(!caracteres.contains(evt.getKeyChar()+"")){
+        evt.consume();
+        }
+        if(evt.getKeyCode() == KeyEvent.VK_BACK_SPACE){
+            v_btn.doClick();
+        }
+    }//GEN-LAST:event_visorKeyTyped
+
+    private void visorKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_visorKeyPressed
+        // TODO add your handling code here:
+         if(evt.getKeyCode() == KeyEvent.VK_ADD){
+            mais_btn.doClick();
+        }
+         if(evt.getKeyCode() == KeyEvent.VK_SUBTRACT){
+            menos_btn.doClick();
+        }
+         if(evt.getKeyCode() == KeyEvent.VK_MULTIPLY){
+            mult_btn.doClick();
+        }
+         if(evt.getKeyCode() == KeyEvent.VK_DIVIDE){
+            div_btn.doClick();
+        }
+        if(evt.getKeyCode() == KeyEvent.VK_DELETE){
+            c_btn.doClick();
+        }
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            igual_btn.doClick();
+        }        
+    }//GEN-LAST:event_visorKeyPressed
 
     /**
      * @param args the command line arguments
